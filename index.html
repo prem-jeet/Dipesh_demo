@@ -1,83 +1,90 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Dipesh | Personal Portfolio</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
     <div class="container">
+      <!-- Header Section -->
+      <header>
+        <div class="profile-header">
+          <img
+            src="images/profile.JPG"
+            alt="Dipesh's Profile Picture"
+            class="profile-pic"
+          />
+          <h1>Dipesh</h1>
+          <p>M.Tech Computer Science | Tech Enthusiast</p>
+        </div>
+        <nav>
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About Me</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+      </header>
 
-        <!-- Header Section -->
-        <header>
-            <div class="profile-header">
-                <img src="images/profile.jpg" alt="Dipesh's Profile Picture" class="profile-pic">
-                <h1>Dipesh</h1>
-                <p>M.Tech Computer Science | Tech Enthusiast</p>
-            </div>
-            <nav>
-                <ul>
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#about">About Me</a></li>
-                    <li><a href="#skills">Skills</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-            </nav>
-        </header>
+      <!-- Home Section -->
+      <section id="home" class="section">
+        <div class="content">
+          <h2>Welcome!</h2>
+          <p>
+            I am Dipesh, an aspiring computer scientist with a passion for
+            building innovative projects. Let's build the future together!
+          </p>
+          <a href="#about" class="btn">Learn More</a>
+        </div>
+      </section>
 
-        <!-- Home Section -->
-        <section id="home" class="section">
-            <div class="content">
-                <h2>Welcome!</h2>
-                <p>I am Dipesh, an aspiring computer scientist with a passion for building innovative projects. Let's build the future together!</p>
-                <a href="#about" class="btn">Learn More</a>
-            </div>
-        </section>
+      <!-- About Me Section -->
+      <section id="about" class="section">
+        <div class="content">
+          <h2>About Me</h2>
+          <p>
+            I specialize in software development, networking, and embedded
+            systems. I love exploring new technologies and collaborating on
+            impactful projects.
+          </p>
+        </div>
+      </section>
 
-        <!-- About Me Section -->
-        <section id="about" class="section">
-            <div class="content">
-                <h2>About Me</h2>
-                <p>I specialize in software development, networking, and embedded systems. I love exploring new technologies and collaborating on impactful projects.</p>
-            </div>
-        </section>
+      <!-- Skills Section -->
+      <section id="skills" class="section">
+        <div class="content">
+          <h2>Skills</h2>
+          <div class="skills-list">
+            <div class="skill-item">Python</div>
+            <div class="skill-item">C++</div>
+            <div class="skill-item">Networking (NAT, TCP/IP)</div>
+            <div class="skill-item">Embedded Systems</div>
+            <div class="skill-item">TensorFlow</div>
+          </div>
+        </div>
+      </section>
 
-        <!-- Skills Section -->
-        <section id="skills" class="section">
-            <div class="content">
-                <h2>Skills</h2>
-                <div class="skills-list">
-                    <div class="skill-item">Python</div>
-                    <div class="skill-item">C++</div>
-                    <div class="skill-item">Networking (NAT, TCP/IP)</div>
-                    <div class="skill-item">Embedded Systems</div>
-                    <div class="skill-item">TensorFlow</div>
-                </div>
-            </div>
-        </section>
+      <!-- Contact Section -->
+      <section id="contact" class="section">
+        <div class="content">
+          <h2>Contact Me</h2>
+          <form>
+            <label for="name">Name:</label>
+            <input type="text" id="name" required />
 
-        <!-- Contact Section -->
-        <section id="contact" class="section">
-            <div class="content">
-                <h2>Contact Me</h2>
-                <form>
-                    <label for="name">Name:</label>
-                    <input type="text" id="name" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" required />
 
-                    <label for="email">Email:</label>
-                    <input type="email" id="email" required>
+            <label for="message">Message:</label>
+            <textarea id="message" rows="5" required></textarea>
 
-                    <label for="message">Message:</label>
-                    <textarea id="message" rows="5" required></textarea>
-
-                    <button type="submit">Send Message</button>
-                </form>
-            </div>
-        </section>
-
+            <button type="submit">Send Message</button>
+          </form>
+        </div>
+      </section>
     </div>
-
-</body>
+  </body>
 </html>
